@@ -16,8 +16,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: MAven verify 
-      run: mvn -B verify sonar:sonar -Dsonar.projectKey=tanchiak_synk-vulnerable-javaapp   -Dsonar.organization=tanchiak -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+      run: mvn -B verify sonar:sonar -Dsonar.projectKey=javaprojectreachabilityraptor_javaprojectreachabilityraptor -Dsonar.organization=javaprojectreachabilityraptor -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-    
